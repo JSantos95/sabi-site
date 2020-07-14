@@ -1,0 +1,33 @@
+.footer{
+  width: 55%;
+  margin: 0 auto;
+  border-top: 2px solid #777;
+  margin-top: 4rem;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__left{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  &__right {
+    margin-top: 1.5rem;
+    &--contacts{
+      display: inline-flex;
+      list-style-type: none;
+      font-size: 2.8rem;
+
+      & li {
+        &:not(:first-child){
+          margin-left: 1.3rem;
+        }
+
+        i{
+          color: black;
+        }
+      }
+    }
+  }
+}
