@@ -23,6 +23,39 @@ body {
 .about__title {
   font-family: 'Kalam', cursive; }
 
+@keyframes moveFromBottom {
+  0% {
+    transform: translateY(3rem);
+    opacity: 0; }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-3rem);
+    opacity: 0; }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(3rem);
+    opacity: 0; }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+
+.flex__img {
+  animation-name: moveFromBottom;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-delay: .75s;
+  animation-fill-mode: backwards; }
+  .flex__img:hover {
+    opacity: .5; }
+
 .about {
   height: 100vh;
   width: 100%;
@@ -76,18 +109,11 @@ body {
       margin-right: 2.2rem;
       font-size: 3rem; }
       .about__contacts li i {
-        transition: all .2s; }
+        transition: all .2s;
+        color: #93748A; }
         .about__contacts li i:hover {
           transform: translateY(-0.4rem) scale(1.2);
           color: #333; }
-    .about__contacts--1 {
-      color: #B23121; }
-    .about__contacts--2 {
-      color: #00acee; }
-    .about__contacts--3 {
-      color: #3f729b; }
-    .about__contacts--4 {
-      color: #053eff; }
   .about:target {
     opacity: 1;
     visibility: visible; }
@@ -138,6 +164,9 @@ body {
     color: #000;
     text-decoration: none;
     padding-left: 2rem; }
+    .header__nav--link:hover {
+      color: #93748A;
+      text-decoration: underline; }
 
 .flex {
   display: flex;
@@ -159,17 +188,18 @@ body {
   justify-content: space-between; }
   .footer__left {
     margin-top: 1.5rem;
-    font-size: 1.8rem; }
+    font-size: 1.4rem; }
   .footer__right {
     margin-top: 1.5rem; }
     .footer__right--contacts {
       display: inline-flex;
       list-style-type: none;
-      font-size: 2.8rem; }
+      font-size: 2rem; }
       .footer__right--contacts li:not(:first-child) {
         margin-left: 1.3rem; }
       .footer__right--contacts li i {
         color: black;
         transition: all .3s; }
         .footer__right--contacts li i:hover {
-          transform: translateY(-0.4rem) scale(1.2); }
+          transform: translateY(-0.4rem) scale(1.2);
+          color: #93748A; }

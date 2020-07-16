@@ -1,2 +1,15 @@
 .artwork {
+
+}
+
+.flex__img {
+  animation-name: moveFromBottom;
+  animation-duration: .5s;
+  animation-timing-function: ease-in;
+  animation-delay: .75s;
+  animation-fill-mode: backwards;
+
+  &:hover {
+    opacity: .5;
+  }
 }

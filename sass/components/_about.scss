@@ -66,6 +66,7 @@
 
       & i {
         transition: all .2s;
+        color: $darkish-pink;
 
         &:hover{
           transform: translateY(-.4rem) scale(1.2);
@@ -75,16 +76,16 @@
     }
 
     &--1{
-      color: #B23121;
+
     }
     &--2{
-      color: $twitter;
+
     }
     &--3{
-      color: $instagram;
+
     }
     &--4{
-      color: $behance;
+
     }
 
   }

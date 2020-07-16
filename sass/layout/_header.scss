@@ -37,5 +37,10 @@
     color: #000;
     text-decoration: none;
     padding-left: 2rem;
+
+    &:hover {
+      color: $darkish-pink;
+      text-decoration: underline;
+    }
   }
 }
