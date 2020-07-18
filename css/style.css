@@ -47,13 +47,13 @@ body {
     transform: translate(0);
     opacity: 1; } }
 
-.flex__img {
+.flex__img, .flex__gif, .flex__img-wide {
   animation-name: moveFromBottom;
   animation-duration: .5s;
   animation-timing-function: ease-in;
   animation-delay: .75s;
   animation-fill-mode: backwards; }
-  .flex__img:hover {
+  .flex__img:hover, .flex__gif:hover, .flex__img-wide:hover {
     opacity: .5; }
 
 .about {
@@ -174,9 +174,19 @@ body {
   justify-content: center; }
   .flex__img {
     height: 60rem;
-    width: 33rem;
+    width: 40rem;
     padding: .8rem;
     object-fit: cover; }
+    .flex__img-wide {
+      height: 35rem;
+      width: 50rem;
+      padding: .5rem;
+      object-fit: scale-down; }
+  .flex__gif {
+    height: 35rem;
+    width: 35rem;
+    padding: .5rem;
+    align-self: center; }
 
 .footer {
   width: 55%;

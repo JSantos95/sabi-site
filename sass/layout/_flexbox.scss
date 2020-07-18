@@ -3,11 +3,26 @@
   flex-wrap: nowrap;
   justify-content: center;
 
+
   &__img {
     height: 60rem;
-    width: 33rem;
+    width: 40rem;
     padding: .8rem;
     object-fit: cover;
+
+    &-wide{
+      height: 35rem;
+      width: 50rem;
+      padding: .5rem;
+      object-fit: scale-down;
+    }
+  }
+
+  &__gif {
+    height: 35rem;
+    width: 35rem;
+    padding: .5rem;
+    align-self: center;
   }
 
 }
