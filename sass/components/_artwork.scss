@@ -13,3 +13,41 @@
     opacity: .5;
   }
 }
+
+.slide{
+  position: relative;
+}
+
+
+.slideshow {
+  display: none;
+
+  &--1 {
+    display: block;
+  }
+}
+
+
+.slideshow-button {
+  height: 5rem;
+  width: 5rem;
+  opacity: .8;
+  background-color: rgba(black, .1);
+  position: absolute;
+
+
+  &--left{
+    top: 6rem;
+    left: .8rem;
+  }
+
+  &--right{
+    top: 11rem;
+    left: .8rem;
+  }
+
+  &:hover{
+    background-color: black;
+    color: white;
+  }
+}

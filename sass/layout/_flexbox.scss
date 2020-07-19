@@ -11,17 +11,18 @@
     object-fit: cover;
 
     &-wide{
-      height: 35rem;
-      width: 50rem;
-      padding: .5rem;
-      object-fit: scale-down;
+      height: 40rem;
+      width: 60rem;
+      padding: .8rem;
+      object-fit: cover;
     }
+
   }
 
   &__gif {
-    height: 35rem;
-    width: 35rem;
-    padding: .5rem;
+    height: 40rem;
+    width: 60rem;
+    padding: .8rem;
     align-self: center;
   }
 
