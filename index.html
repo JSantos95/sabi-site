@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/14dc21c752.js" crossorigin="anonymous"></script>
-    <script src="script.js" type="text/javascript">
-
-    </script>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon_io/site.webmanifest">
   </head>
   <body id="main">
 
@@ -35,30 +37,53 @@
       </div>
 
       <div class="flex">
-        <div class="slide">
-          <img class="flex__img slideshow slideshow--1" src="img/comic-1/IMG_1545.PNG" alt="art-12"/>
-          <img class="flex__img slideshow" src="img/comic-1/IMG_1546.jpg" alt="art-5"/>
-          <img class="flex__img slideshow" src="img/comic-1/IMG_1547.PNG" alt="art-4"/>
-          <img class="flex__img slideshow" src="img/comic-1/IMG_1548.PNG" alt="art-6"/>
-
-          <button class="slideshow-button slideshow-button--left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="slideshow-button slideshow-button--right" onclick="plusDivs(1)">&#10095;</button>
-        </div>
-        <img class="flex__img" src="img/IMG_1536.jpg" alt="art-7"/>
-        <img class="flex__img" src="img/IMG_1538.jpg" alt="art-9"/>
+        <img class="flex__gif" src="img/IMG_1544.gif" alt="gif-1"/>
+        <img class="flex__gif" src="img/IMG_1543.gif" alt="gif-19"/>
       </div>
 
       <div class="flex">
-        <div class="slide">
-          <img class="flex__img slideshow slideshow--1" src="img/comic-2/IMG_1549.jpg" alt="art-12"/>
-          <img class="flex__img slideshow" src="img/comic-2/IMG_1550.jpg" alt="art-5"/>
-          <img class="flex__img slideshow" src="img/comic-2/IMG_1551.jpg" alt="art-4"/>
-          <img class="flex__img slideshow" src="img/comic-2/IMG_1552.jpg" alt="art-6"/>
 
-          <button class="slideshow-button slideshow-button--left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="slideshow-button slideshow-button--right" onclick="plusDivs(1)">&#10095;</button>
+        <div class="slideshow">
+        	<input type="radio" id="i1" name="image" checked/>
+        	<input type="radio" id="i2" name="image" />
+        	<input type="radio" id="i3" name="image" />
+        	<input type="radio" id="i4" name="image" />
+
+        	<div class="slide_img" id="one">
+        			<img class="flex__page" src="img/comic-1/IMG_1545.PNG" alt="art-12">
+        				<label class="prev" for="i4"><span></span></label>
+        				<label class="next" for="i2"><span></span></label>
+        	</div>
+
+        	<div class="slide_img" id="two">
+        			<img class="flex__page" src="img/comic-1/IMG_1546.jpg" alt="art-5">
+        				<label class="prev" for="i1"><span></span></label>
+        				<label class="next" for="i3"><span></span></label>
+        	</div>
+
+        	<div class="slide_img" id="three">
+        			<img class="flex__page" src="img/comic-1/IMG_1547.PNG" alt="art-4">
+        				<label class="prev" for="i2"><span></span></label>
+        				<label class="next" for="i4"><span></span></label>
+        	</div>
+
+        	<div class="slide_img" id="four">
+        			<img class="flex__page" src="img/comic-1/IMG_1548.PNG" alt="art-5">
+        				<label class="prev" for="i3"><span></span></label>
+        				<label class="next" for="i1"><span></span></label>
+        	</div>
+
+        	<div id="nav_slide">
+        		<label for="i1" class="dots" id="dot1"></label>
+        		<label for="i2" class="dots" id="dot2"></label>
+        		<label for="i3" class="dots" id="dot3"></label>
+        		<label for="i4" class="dots" id="dot4"></label>
+        	</div>
+
         </div>
-        <img class="flex__img" src="img/IMG_1541.jpg" alt="art-10"/>
+
+        <img class="flex__img" src="img/IMG_1536.jpg" alt="art-7"/>
+        <img class="flex__img" src="img/IMG_1538.jpg" alt="art-9"/>
       </div>
 
       <div class="flex">
@@ -67,8 +92,46 @@
       </div>
 
       <div class="flex">
-        <img class="flex__gif" src="img/IMG_1544.gif" alt="gif-1"/>
-        <img class="flex__gif" src="img/IMG_1543.gif" alt="gif-19"/>
+        <div class="slideshow">
+        	<input type="radio" id="i5" name="images" checked/>
+        	<input type="radio" id="i6" name="images" />
+        	<input type="radio" id="i7" name="images" />
+        	<input type="radio" id="i8" name="images" />
+
+        	<div class="slide_img" id="five">
+        			<img class="flex__page" src="img/comic-2/IMG_1549.jpg" alt="art-12">
+        				<label class="prev" for="i8"><span></span></label>
+        				<label class="next" for="i6"><span></span></label>
+        	</div>
+
+        	<div class="slide_img" id="six">
+        			<img class="flex__page" src="img/comic-2/IMG_1550.jpg" alt="art-5">
+        				<label class="prev" for="i5"><span></span></label>
+        				<label class="next" for="i7"><span></span></label>
+        	</div>
+
+        	<div class="slide_img" id="seven">
+        			<img class="flex__page" src="img/comic-2/IMG_1551.jpg"  alt="art-4">
+        				<label class="prev" for="i6"><span></span></label>
+        				<label class="next" for="i8"><span></span></label>
+        	</div>
+
+        	<div class="slide_img" id="eight">
+        			<img class="flex__page" src="img/comic-2/IMG_1552.jpg"  alt="art-5">
+        				<label class="prev" for="i7"><span></span></label>
+        				<label class="next" for="i5"><span></span></label>
+        	</div>
+
+        	<div id="nav_slide">
+        		<label for="i5" class="dots" id="dot5"></label>
+        		<label for="i6" class="dots" id="dot6"></label>
+        		<label for="i7" class="dots" id="dot7"></label>
+        		<label for="i8" class="dots" id="dot8"></label>
+        	</div>
+        </div>
+
+        <img class="flex__img flex__img--sq" src="img/IMG_1540.PNG" alt="art-100"/>
+        <img class="flex__img" src="img/IMG_1541.jpg" alt="art-10"/>
       </div>
 
       <div class="flex">
@@ -102,12 +165,12 @@
     </footer>
 
     <div class="about" id="about">
+      <a href="#" class="about__close">&times;</a>
       <div class="about__content">
         <div class="about__left">
           <img src="img/Sabii.PNG" alt="sabii">
         </div>
         <div class="about__right">
-          <a href="#" class="about__close">&times;</a>
           <h1 class="about__title">About:</h1>
           <p class="about__text">
             Sabii is a 25 year old Illustrator from Queens, New York. She loves food, anime, video games, collecting art books, and a good meme. She graduated with a BFA in Illustration from The Fashion Institute of Technology in 2019. Sabii currently lives in Queens, New York with her 2 roommates and cat name Lily.
@@ -132,8 +195,8 @@
     </div>
 
     <div class="popup" id="popup">
+      <a href="#" class="popup__close">&times;</a>
       <div class="popup__content">
-        <a href="#" class="about__close">&times;</a>
         <img src="img/IMG_1531.PNG" alt="art-1"/>
       </div>
     </div>

@@ -111,11 +111,11 @@
   &__close {
     &:link,
     &:visited {
-      color: #777;
+      color: white;
       position: absolute;
-      top: 1.5rem;
-      right: 1.6rem;
-      font-size: 4rem;
+      top: 3rem;
+      left: 4rem;
+      font-size: 4.5rem;
       text-decoration: none;
       display: inline-block;
       transition: all .2s;

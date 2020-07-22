@@ -10,13 +10,16 @@
     padding: .8rem;
     object-fit: cover;
 
-    &-wide{
+    &-wide {
       height: 40rem;
       width: 60rem;
       padding: .8rem;
       object-fit: cover;
     }
 
+    &--sq{
+      object-fit: scale-down;
+    }
   }
 
   &__gif {
@@ -24,6 +27,13 @@
     width: 60rem;
     padding: .8rem;
     align-self: center;
+  }
+
+  &__page {
+    height: 60rem;
+    width: 40rem;
+    padding: .8rem;
+    object-fit: cover;
   }
 
 }
