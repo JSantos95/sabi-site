@@ -99,7 +99,7 @@
 #i3:checked ~ #three,
 #i4:checked ~ #four {
 	z-index: 9;
-	animation: scroll 1s ease-in-out;
+
 }
 
 #i1:checked ~ #nav_slide #dot1 {background: $darkish-pink;}
@@ -112,20 +112,13 @@
 #i7:checked ~ #seven,
 #i8:checked ~ #eight {
 	z-index: 9;
-	animation: scroll 1s ease-in-out;
+
 }
 
 #i5:checked ~ #nav_slide #dot5 {background: $darkish-pink;}
 #i6:checked ~ #nav_slide #dot6 {background: $magenta;}
 #i7:checked ~ #nav_slide #dot7 {background: $blue;}
 #i8:checked ~ #nav_slide #dot8 {background: $green;}
-
-
-
-@keyframes scroll {
-	0% { opacity: .4;}
-	100% { opacity: 1;}
-}
 
 @media screen and (max-width: 685px) {
 	.slideshow {

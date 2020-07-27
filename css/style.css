@@ -280,8 +280,7 @@ body {
 #i2:checked ~ #two,
 #i3:checked ~ #three,
 #i4:checked ~ #four {
-  z-index: 9;
-  animation: scroll 1s ease-in-out; }
+  z-index: 9; }
 
 #i1:checked ~ #nav_slide #dot1 {
   background: #93748A; }
@@ -299,8 +298,7 @@ body {
 #i6:checked ~ #six,
 #i7:checked ~ #seven,
 #i8:checked ~ #eight {
-  z-index: 9;
-  animation: scroll 1s ease-in-out; }
+  z-index: 9; }
 
 #i5:checked ~ #nav_slide #dot5 {
   background: #93748A; }
@@ -313,12 +311,6 @@ body {
 
 #i8:checked ~ #nav_slide #dot8 {
   background: #4CAF50; }
-
-@keyframes scroll {
-  0% {
-    opacity: .4; }
-  100% {
-    opacity: 1; } }
 
 @media screen and (max-width: 685px) {
   .slideshow {
