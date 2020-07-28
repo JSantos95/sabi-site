@@ -14,11 +14,6 @@
 		height: 100%;
 		z-index: -1;
 
-		img {
-			width: inherit;
-			height: inherit;
-		}
-
 		.prev, .next {
 			width: $big_nav_width;
 			height: 20%;
