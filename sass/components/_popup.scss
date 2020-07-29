@@ -33,6 +33,10 @@
       width: auto;
       object-fit: contain;
     }
+
+    &--wide{
+      height: 65vh !important;
+    }
   }
 
   &:target {

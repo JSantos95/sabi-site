@@ -19,7 +19,7 @@
 
   &__content {
     @include absCenter;
-    @include scrollbars(10px, white, $darkish-pink)
+    @include scrollbars(1rem, $darkish-pink)
     background-color: rgba(white, 0.9);
     box-shadow: 0 2rem 4rem rgba(black, .2);
     border-radius: 6px;
