@@ -2,7 +2,10 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-
+  @include respond(phone){
+    flex-direction: column;
+    align-items: center;
+  };
 
   &__img {
     height: 60rem;
@@ -10,11 +13,26 @@
     padding: .8rem;
     object-fit: cover;
 
+    @include respond(tab-land){
+      height: 50rem;
+      width: 30em;
+    };
+    @include respond(phone){
+      height: auto;
+      width: 60vh;
+    };
+
     &-wide {
       height: 40rem;
       width: 60rem;
-      padding: .8rem;
-      object-fit: cover;
+      @include respond(tab-land){
+        height: 30rem;
+        width: 45em;
+      };
+      @include respond(phone){
+        height: auto;
+        width: 60vh;
+      };
     }
 
     &--sq{
@@ -22,18 +40,21 @@
     }
   }
 
-  &__gif {
-    height: 40rem;
-    width: 60rem;
-    padding: .8rem;
-    align-self: center;
-  }
 
   &__page {
     height: 60rem;
     width: 40rem;
     padding: .8rem;
     object-fit: cover;
+
+    @include respond(tab-land){
+      height: 50rem;
+      width: 30em;
+    };
+    @include respond(phone){
+      height: 82rem;
+      width: 62rem;
+    };
   }
 
 }

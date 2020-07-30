@@ -3,6 +3,15 @@
 	width: 40rem;
 	height: 60rem;
 	user-select: none;
+	@include respond(tab-land){
+		height: 50rem;
+		width: 30em;
+	};
+	@include respond(phone){
+		height: 82rem;
+		width: 62rem;
+	};
+
 
 	input {
 		display: none;
@@ -115,35 +124,6 @@
 #i7:checked ~ #nav_slide #dot7 {background: $blue;}
 #i8:checked ~ #nav_slide #dot8 {background: $green;}
 
-@media screen and (max-width: 685px) {
-	.slideshow {
-		border: none;
-		width: $small_width;
-		height: 0;
-		padding-bottom: $small_height;
-
-		.slide_img {
-			.prev, .next {
-				width: $small_nav_width;
-			}
-
-			.prev span, .next span {
-				border: solid 12px;
-			}
-			.prev span {
-				border-color: transparent #fff transparent transparent;
-			}
-			.next span {
-				border-color: transparent transparent transparent #fff;
-			}
-		}
-
-		#nav_slide .dots {
-			width: 12px;
-			height: 12px;
-		}
-	}
-}
 
 .yt{
 	margin: 0 auto;

@@ -30,3 +30,32 @@
     scrollbar-track-color: $background-color;
   }
 }
+
+//Media Query Manager
+/*
+0-600px - Phones
+600 - 900px: Tables P
+900 - 1200px: Tables L
+
+(1200-1800) - Normal style
+
+1800px+: Big Desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+*/
+
+//1em == 16px
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 46.25em) { @content }; //740px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) { @content }; //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) { @content }; //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) { @content }; //1800px
+  }
+}
