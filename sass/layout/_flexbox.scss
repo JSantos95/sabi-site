@@ -52,9 +52,9 @@
       width: 30em;
     };
     @include respond(phone){
-      height: 82rem;
-      width: 62rem;
-    };
+  		height: 70rem;
+  		width: 60vh;
+  	};
   }
 
 }

@@ -8,8 +8,8 @@
 		width: 30em;
 	};
 	@include respond(phone){
-		height: 82rem;
-		width: 62rem;
+		height: 70rem;
+		width: 60vh;
 	};
 
 
@@ -24,44 +24,43 @@
 		z-index: -1;
 
 		.prev, .next {
-			width: $big_nav_width;
-			height: 20%;
+			width: 5rem;
+			height: 5rem;
 			position: absolute;
-			top: 22rem;
 			background-color: $nav_color;
 			z-index: 99;
 			transition: .45s;
 			cursor: pointer;
 			text-align: center;
+			opacity: .8;
 		}
 		.next {
-			right: 1rem;
+			top: 1rem;
+			left: 6rem;
+			border-left: .1rem solid rgba(black, .1);
 		}
 		.prev {
+			top: 1rem;
 			left: 1rem;
 		}
 
 		.prev:hover, .next:hover {
 			transition: .3s;
 			background-color: $nav_hover_color;
+			opacity: 1;
 		}
 
-		.prev span, .next span {
-			position: absolute;
-			width: 0px;
-			height: 0px;
-			border: solid 20px;
-			top: 50%;
-			transform: translateY(-50%);
+		.prev i, .next i {
+			font-size: 3.8rem;
+			color: rgba(white, .4);
+			margin: .8rem auto;
 		}
 
-		.prev span {
+		.prev i {
 			border-color: transparent #fff transparent transparent;
-			right: 35%;
 		}
-		.next span {
+		.next i {
 			border-color: transparent transparent transparent #fff;
-			left: 35%;
 		}
 	}
 

@@ -32,10 +32,29 @@
       height: 90vh;
       width: auto;
       object-fit: contain;
+      @include respond(tab-land){
+        height: 80vh;
+      };
+      @include respond(tab-port){
+        height: 70vh;
+      };
+      @include respond(phone){
+        height: 60vh;
+      };
+
     }
 
     &--wide{
       height: 65vh !important;
+      @include respond(tab-land){
+        height: 50vh !important;
+      };
+      @include respond(tab-port){
+        height: 45vh !important;
+      };
+      @include respond(phone){
+        height: 40vh !important;
+      };
     }
   }
 

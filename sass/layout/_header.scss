@@ -4,6 +4,11 @@
   padding: 3rem 0 2rem 0;
   border-bottom: .2rem solid #777;
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  @include respond(tab-port){
+    width: 75%;
+  };
 
   &__title {
     display: inline-block;
@@ -28,15 +33,17 @@
 }
 
 .header__nav {
-  display: inline;
-  float: right;
+  display: flex;
   font-size: 2.3rem;
   margin-top: 3.5rem;
 
   &--link {
     color: #000;
     text-decoration: none;
-    padding-left: 2rem;
+    &:not(:first-child) {
+      padding-left: 2rem;
+    }
+
 
     &:hover {
       color: $darkish-pink;

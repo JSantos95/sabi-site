@@ -19,28 +19,38 @@
   &__content {
     @include absCenter;
     width: 60%;
+    height: auto;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(black, .2);
     border-radius: 6px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(.5);
     transition: all .4s .2s;
+    @include respond(tab-port){
+      flex-direction: column-reverse;
+      justify-content: center;
+    };
   }
 
   &__left {
-    width: 33.333333%;
 
-    img{
-      width: 45rem;
+    &--pic{
+      width: 100%;
+      @include respond(tab-port){
+        width: 70%;
+        padding-left: 25%;
+      };
     }
   }
 
   &__right {
-    width: 60%;
-    margin-left: 5rem;
+    @include respond(tab-port){
+      padding: 0 2rem;
+    }
   }
 
   &__title {
@@ -78,20 +88,6 @@
         }
       }
     }
-
-    &--1{
-
-    }
-    &--2{
-
-    }
-    &--3{
-
-    }
-    &--4{
-
-    }
-
   }
 
   .inner {
