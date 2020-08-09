@@ -7,6 +7,12 @@
     align-items: center;
   };
 
+  &__sides{
+    @include respond(phone){
+      justify-content: space-between;
+    }
+  }
+
   &__img {
     height: 60rem;
     width: 40rem;
@@ -18,8 +24,8 @@
       width: 30em;
     };
     @include respond(phone){
-      height: auto;
-      width: 60vh;
+      height: $phone-height;
+  		width: $phone-width;
     };
 
     &-wide {
@@ -30,8 +36,8 @@
         width: 45em;
       };
       @include respond(phone){
-        height: auto;
-        width: 60vh;
+        height: $phone-height;
+    		width: $phone-width;
       };
     }
 
@@ -52,8 +58,8 @@
       width: 30em;
     };
     @include respond(phone){
-  		height: 70rem;
-  		width: 60vh;
+  		height: 65rem;
+  		width: $phone-width;
   	};
   }
 

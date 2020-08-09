@@ -6,24 +6,46 @@
   height: 7rem;
   display: flex;
   justify-content: space-between;
+  @include respond(phone){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  };
 
   &__left{
     margin-top: 1.5rem;
     font-size: 1.4rem;
+
+    &--text{
+      @include respond(phone){
+        padding-top: 1.5rem;
+      }
+    }
   }
 
   &__right {
     margin-top: 1.5rem;
+    @include respond(phone){
+      margin-bottom: 1.5rem;
+    };
     &--contacts{
       display: inline-flex;
       list-style-type: none;
       font-size: 2rem;
+      @include respond(phone){
+        font-size: 2.8rem;
+      };
 
       & li {
         &:not(:first-child){
           margin-left: 1.3rem;
         }
-
+        @include respond(phone){
+          &:not(:first-child){
+            margin-left: 2rem;
+          }
+        };
         i{
           color: black;
           transition: all .3s;

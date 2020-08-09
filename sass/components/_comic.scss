@@ -1,6 +1,6 @@
 .comic {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,6 +42,10 @@
       &:not(:last-child) {
         margin-bottom: 5rem;
       }
+      @include respond(phone){
+        height: auto;
+        width: 90vw;
+      };
     }
   }
 
@@ -67,6 +71,14 @@
       display: inline-block;
       transition: all .2s;
       line-height: 1;
+      z-index: 999;
+      @include respond(phone){
+        color: black;
+        border-radius: 15px;
+        padding: 0 1rem;
+        top: 5rem;
+        left: 3rem;
+      };
     }
 
     &:hover{

@@ -23,10 +23,14 @@
       </div>
 
       <div class="header__nav">
-        <a href="#" class="header__nav--link">Illustration</a>
-        <a href="#" class="header__nav--link">Comic</a>
+        <a href="pages/illustration.html" class="header__nav--link">Illustration</a>
+        <a href="pages/comics.html" class="header__nav--link">Comic</a>
         <a href="http://sabiiborno.storenvy.com/" target="_blank" class="header__nav--link">Store</a>
         <a href="#about" class="header__nav--link">About</a>
+      </div>
+
+      <div class="header__menu">
+        <a href="#nav-bar"><i class="fas fa-bars"></i></a>
       </div>
     </header>
 
@@ -43,7 +47,7 @@
         <a href="#popup-6"><img class="flex__img flex__img-wide" src="img/IMG_1543.gif" alt="gif-19"/></a>
       </div>
 
-      <div class="flex" id="row-3">
+      <div class="flex flex__sides" id="row-3">
         <div class="slideshow">
         	<input type="radio" id="i1" name="image" checked/>
         	<input type="radio" id="i2" name="image" />
@@ -90,7 +94,7 @@
         	<input type="radio" id="i8" name="images" />
 
         	<div class="slide_img" id="five">
-              <a href="#comic-2"><img class="flex__page" src="img/comic-2/IMG_1549.jpg" alt="art-12"></a>
+              <a href="#comic-2"><img class="flex__page" src="img/comic-2/IMG_1549_2.jpg" alt="art-12"></a>
         				<label class="prev" for="i8"><i class="fas fa-angle-double-left"></i></label>
         				<label class="next" for="i6"><i class="fas fa-angle-double-right"></i></label>
         	</div>
@@ -145,7 +149,7 @@
     <!--- Footer --->
     <footer class="footer">
       <div class="footer__left">
-        <p>Artwork &copy; Sabii Borno 2020. All Rights Reserved</p>
+        <p class="footer__left--text">Artwork &copy; Sabii Borno 2020. All Rights Reserved</p>
       </div>
       <div class="footer__right">
         <ul class="footer__right--contacts">
@@ -289,6 +293,16 @@
         <a href="#row-6" class="popup__close">&times;</a>
         <div class="popup__content">
           <img class="popup__content--wide" src="img/IMG_1537.PNG" alt="art-8"/>
+        </div>
+      </div>
+
+      <div class="popup" id="nav-bar">
+        <a href="#main" class="popup__close">&times;</a>
+        <div class="popup__content popup__navi">
+          <a href="#" class="popup__navi--link">Illustration</a>
+          <a href="#" class="popup__navi--link">Comic</a>
+          <a href="http://sabiiborno.storenvy.com/" target="_blank" class="popup__navi--link">Store</a>
+          <a href="#about" class="popup__navi--link">About</a>
         </div>
       </div>
 
