@@ -22,25 +22,6 @@
     text-decoration: none;
     color: #000;
   }
-
-  &__menu {
-    display: none;
-    @include respond(phone){
-      display: block;
-      width: auto;
-      margin-top: 3.5rem;
-      position: sticky;
-      top: 0;
-      text-decoration: none;
-      i {
-        font-size: 3.2rem;
-        &:hover {
-          color: $darkish-pink;
-          text-decoration: underline;
-        }
-      }
-    };
-  }
 }
 
 .primary-header {
