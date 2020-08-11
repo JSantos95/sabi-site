@@ -1,6 +1,6 @@
 .about {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
 
   &__content {
     @include absCenter;
-    width: 60%;
+    width: 60vw;
     height: auto;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(black, .2);
@@ -34,6 +34,10 @@
       flex-direction: column;
       justify-content: center;
     };
+    @include respond(phone) {
+      width: 80vw;
+    };
+
   }
 
   &__left {

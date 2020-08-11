@@ -1,7 +1,7 @@
 .nav{
   position: absolute;
   right: 5.2rem;
-  top: 3.5rem;
+  top: 7.5rem;
 
   &__menu, &__menu:link, &__menu:visited {
     display: none;
@@ -12,8 +12,6 @@
       display: block;
       z-index: 99999999999;
       width: auto;
-      margin-top: 4.5rem;
-      margin-right: 3rem;
       top: 0;
       text-decoration: none;
       i {
@@ -62,10 +60,6 @@
       font-size: 8rem;
       text-decoration: none;
       color: white;
-
-      &:hover{
-        transform: scale(1.2);
-      }
     }
   }
 
@@ -85,7 +79,7 @@
       color: white;
       position: absolute;
       top: 8rem;
-      right: 11rem;
+      right: 5.7rem;
       font-size: 6rem;
       text-decoration: none;
       display: inline-block;
