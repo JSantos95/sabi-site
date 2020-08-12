@@ -31,7 +31,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient($lighter-pink, $darkish-pink);
   z-index: 99999;
   opacity: 0;
   visibility: hidden;
@@ -57,7 +56,7 @@
     transition: all .4s .2s;
 
     &--link {
-      font-size: 8rem;
+      font-size: 6.5rem;
       text-decoration: none;
       color: white;
     }

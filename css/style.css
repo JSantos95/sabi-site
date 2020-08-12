@@ -39,7 +39,7 @@ body {
   font-weight: 600; }
 
 .about__title {
-  font-family: 'Kalam', cursive; }
+  font-family: 'PT Sans', cursive; }
 
 @keyframes moveFromBottom {
   0% {
@@ -667,7 +667,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient(#a68c9f, #93748A);
   z-index: 99999;
   opacity: 0;
   visibility: hidden;
@@ -693,7 +692,7 @@ body {
     transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
     .navup__content--link {
-      font-size: 8rem;
+      font-size: 6.5rem;
       text-decoration: none;
       color: white; }
   .navup:target {
